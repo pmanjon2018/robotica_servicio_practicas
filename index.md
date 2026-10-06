@@ -33,9 +33,3 @@ A lo largo de este blog se hacen uso de las siguientes herramientas:
 
 ---
 *Repositorio mantenido y documentado por Paula Manjón.*
-
----
-
-### Índice de Prácticas
-* **Práctica 1:** Localized Vacuum Cleaner.
-* **Práctica 2:** Drone Rescue People.
