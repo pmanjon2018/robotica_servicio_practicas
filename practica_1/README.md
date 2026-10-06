@@ -34,7 +34,7 @@ El primer paso consiste en modelar el entorno utilizando una aproximación basad
 * Realizamos una aumentación de los obstáculos para dotar al robot de un margen de seguridad antichoque y generamos una cuadrícula de celdillas de navegación.
 * Durante la ejecución, el mapa clasifica el espacio en tres categorías: **obstáculos reales**, **obstáculos virtuales** (zonas libres que el robot ya ha visitado) y **celdas libres**.
 
-![Foto del mapa corregido](../assets/mapgrannyannie.png) ![Foto del mallado del mapa con aumento de los obstáculos](../assets/gridmap.png)
+![Foto del mapa corregido](../images/mapgrannyannie.png) ![Foto del mallado del mapa con aumento de los obstáculos](../images/gridmap.png)
 
 ## 🌀 2. Planificación del camino a seguir con BSA (Nivel Intermedio)
 
