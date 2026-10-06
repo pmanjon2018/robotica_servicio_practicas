@@ -1,4 +1,4 @@
-# Práctica 1: Filtrado de Partículas
+# Práctica 1: Localized Vacuum Cleaner
 
 ## Descripción
 En esta primera práctica abordamos el problema de la localización y la planificación de trayectorias de cobertura con BSA para un robot aspirador.
