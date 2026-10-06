@@ -1,7 +1,7 @@
 # Práctica 1: Filtrado de Partículas
 
 ## Descripción
-En esta práctica se implementa un algoritmo de localización utilizando un filtro de partículas en ROS 2.
+En esta primera práctica abordamos el problema de la localización y la planificación de trayectorias de cobertura con BSA para un robot aspirador.
 
 Para ello hemos decidido seguir los siguientes pasos:
 0. Razonar cómo lo vamos a resolver. (Nivel deliberativo)
