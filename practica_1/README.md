@@ -33,8 +33,8 @@ Para conseguir esta funcionalidad en este robot de servicio hay que resolver tre
 El primer paso consiste en modelar el entorno utilizando una aproximación basada en cuadrículas o grid map. 
 * Realizamos una aumentación de los obstáculos para dotar al robot de un margen de seguridad antichoque y generamos una cuadrícula de celdillas de navegación.
 * Durante la ejecución, el mapa clasifica el espacio en tres categorías: **obstáculos reales**, **obstáculos virtuales** (zonas libres que el robot ya ha visitado) y **celdas libres**.
-
-![Foto del mapa corregido](../images/mapgrannyannie.png) ![Foto del mallado del mapa con aumento de los obstáculos](../images/gridmap.png)
+![Foto del mapa corregido](../images/mapgrannyannie.png)
+![Foto del mallado del mapa con aumento de los obstáculos](../images/gridmap.png)
 
 ## 🌀 2. Planificación del camino a seguir con BSA (Nivel Intermedio)
 
@@ -42,6 +42,15 @@ Para garantizar que el robot barra todo el espacio disponible, utilizamos el alg
 * El robot evalúa a sus 4 vecinos y avanza hacia una dirección hasta encontrar un obstáculo; en ese momento gira en 2 sentidos (90º) trazando una espiral.
 * A medida que avanza, el algoritmo va marcando las zonas ya visitadas como obstáculos virtuales y actualiza constantemente los puntos de retorno (backtracking points) en las celdas adyacentes no visitadas.
 * Cuando el robot llega a un punto crítico donde está rodeado completamente de obstáculos reales o virtuales, ejecuta un **mecanismo de retroceso**: este algoritmo calcula la ruta hacia el punto de retorno libre más cercano para reanudar el recorrido sistemático completo.
+Para asegurar que el algoritmo BSA funciona y cubre casi el 100%, he probado varios puntos de inicio y orientaciones:
+
+*- Apuntando hacia el norte en una posición distinta de la que se pide.*
+![Foto BSA del camino rojo hacia el norte](../images/redpathnorth.png)
+
+*- Apuntando hacia el oeste desde la posición (tal como se pide).*
+![Foto BSA del camino azul hacia el oeste](../images/bluepathwest.png)
+
+**Se ve como cambia el camino BSA pero abarca prácticamente el 100%, lo comprobaremos dándole vida en el paso 3.**
 
 ## ⚙️ 3. Ejecución de la ruta (Nivel Reactivo)
 
